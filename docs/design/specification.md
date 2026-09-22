@@ -1,79 +1,82 @@
-# Specification: [Your App Idea Name]
+# Specification: Comic Collection Manager
 
-App description: [Write a one or two sentences describing what your app does and who it’s for.]
+App description: The Comic Collection Manager is a web application for comic collectors who want a simple way to organize, browse, search, and review their comic collections from one location.
 
 ## Style and Theme
 
-[Describe the look and feel of your app.] 
+The application will use a clean and organized interface that keeps the focus on the comic collection. Comic information should be easy to scan, and navigation should remain simple and consistent.
 
-Overall mood:
-Examples: fun and playful, calm and professional, bold and energetic, etc.
+Overall mood: Clean, organized, and easy to use.
 
-Use the *style-guide.html* for details on styling -- fonts, colors, and layout.
+The application will continue using the Bootstrap-based styling provided by the starter project, with adjustments as needed for the comic collection interface.
 
 ## User Scenarios
 
 ### Story 1 (most important)
 
-[Write 1-2 sentences. Who is using the app, what do they want to do, and what do they see when it works? Write it like you are describing it to a friend.]
+A comic collector opens the application and wants to find a specific comic in their collection. They open the collection, search or filter the available comics, select the comic they want, and view its complete information on the detail page.
+
+### Story 2
+
+A collector wants to browse their collection without looking for a specific issue. They open the collection page and view the available comics as cards containing basic information.
 
 ---
 
 ## Requirements
 
-Write clear statements about what the app must do.
-
 ### Functional Requirements
 
-1. The app must include these pages:
-	 - Home (`#/`)
-	 - Collection (`#/items`)
-	 - Item detail (`#/items/:id`)
-	 - About (`#/about`)
-2. The navigation bar must let people move to Home, Items, and About.
-3. The app must load data from `items-template.csv` (a simple text table file).
-4. The collection page must show one card per row in the data file.
-5. Each card must include name, short description, and image (if available).
-6. Each card must include a way to open that item's detail page.
-7. The detail page must show full information for one selected item.
+**R1 — Collection Navigation**  
+The application must provide navigation that allows the user to move between the Home, Collection, and About pages.
 
-### Key Data
+**R2 — Collection Display**  
+The application must display the user's comic collection on the Collection page with one card for each comic.
 
-Use this as the basic item shape from the current starter data file.
+**R3 — Comic Summary Information**  
+Each comic card must display basic information including the comic title, issue number, publisher, and an image when available.
 
-- Item
-	- id
-	- name
-	- description
-	- category
-	- image_url
-	- location
+**R4 — Comic Detail View**  
+The user must be able to select a comic from the Collection page and open a detail page containing additional information about that comic.
+
+**R5 — Search**  
+The application must allow the user to search the collection for individual comics.
+
+**R6 — Filtering**  
+The application must allow the collection to be filtered using comic information such as title, publisher, character, issue number, or year.
+
+**R7 — Collection Data**  
+The application must load comic information from the application's collection data source and use that information to create the collection and detail views.
+
+**R8 — Data Loading Feedback**  
+If collection data cannot be loaded, the application must display a clear error message rather than an empty or broken page.
+
+## Key Data
+
+Each comic record should support the information necessary for browsing, searching, filtering, and displaying comic details.
+
+- Comic
+  - id
+  - title
+  - issue_number
+  - publisher
+  - character
+  - year
+  - description
+  - image_url
 
 ## Success Criteria
 
-Describe what success looks like in simple, observable terms.
-
-1. A new person can open the app and reach the collection page in one click from Home.
-2. A new person can open one item detail page from the collection without help.
-3. If the data cannot load, the app shows a clear message instead of a blank page.
-
-
-
-### Starter defaults
-
-The template starts with Bootstrap default styling (light background, blue primary, simple cards). You only need to describe the changes you want.
+1. A new user can reach the comic collection from the Home page without assistance.
+2. A user can browse the available comics and open an individual comic's detail page.
+3. A user can search for a comic in the collection.
+4. A user can filter the collection using available comic information.
+5. Comic information is displayed consistently between collection cards and detail pages.
+6. If collection data cannot be loaded, the user receives a clear error message instead of a blank page.
 
 ## Assumptions
 
-- This is a beginner project for learning how to describe app behavior before generating code. It is a prototype, not a finished product.
-- The app stays simple and uses one text table data file as its data source.
-- The data may use placeholder images or no images at all. Use picsum.photos for any needed placeholder images.
-- Styling remains based on Bootstrap classes already used in the starter project.
-- The first version focuses on clarity and working basics, not advanced features.
-
-## Notes for Students (How to Use This Template)
-
-- Keep each section short and plain.
-- Write for a classmate who is not technical.
-- Focus on user actions and visible results.
-- Start with Story 1 and only add extras if you have time.
+- The first version is a prototype focused on the core collection-management features.
+- The application will use the existing web application template and Bootstrap-based interface.
+- Comic data will use a simple structured data source appropriate for the starter application.
+- Comic images may use placeholders when an image is unavailable.
+- Advanced features such as estimated values, wish lists, condition tracking, statistics, and user accounts are outside the initial scope and may be considered later.
