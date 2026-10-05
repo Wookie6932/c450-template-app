@@ -1,5 +1,6 @@
 .collection-card-image {
-  height: 180px;
+  height: 260px;
+  object-fit: contain;
 }
 
 .collection-description {
@@ -11,5 +12,20 @@
 }
 
 .item-detail-image {
-  max-height: 320px;
+  height: 360px;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  white-space: normal;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card,
+dd {
+  overflow-wrap: anywhere;
 }
