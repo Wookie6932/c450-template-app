@@ -1,11 +1,11 @@
-id,name,description,category,image_url,location
-coffee-corner,Coffee Corner,Cozy local cafe known for pour-over coffee and fresh pastries,Cafe,https://picsum.photos/seed/coffee-corner/800/600,Main Street
-green-grocer,Green Grocer,Neighborhood produce market with seasonal fruits and vegetables,Grocery,https://picsum.photos/seed/green-grocer/800/600,River District
-book-nook,The Book Nook,Independent bookstore with curated fiction and kids titles,Bookstore,https://picsum.photos/seed/book-nook/800/600,Oak Avenue
-fit-studio,Fit Studio,Small-group fitness classes for beginners and busy professionals,Fitness,https://picsum.photos/seed/fit-studio/800/600,North Plaza
-tech-stop,Tech Stop,Device accessories repair and setup help for phones and laptops,Electronics,https://picsum.photos/seed/tech-stop/800/600,Central Mall
-artisan-bites,Artisan Bites,Handmade sandwiches salads and daily soup specials,Restaurant,https://picsum.photos/seed/artisan-bites/800/600,Market Lane
-pet-haven,Pet Haven,Friendly pet supply shop with food toys and grooming essentials,Pet Store,https://picsum.photos/seed/pet-haven/800/600,Sunset Boulevard
-craft-hub,Craft Hub,Creative supply store for painting journaling and classroom projects,Crafts,https://picsum.photos/seed/craft-hub/800/600,West End
-city-cycles,City Cycles,Urban bike rentals tune-ups and safety gear for all ages,Sports,https://picsum.photos/seed/city-cycles/800/600,Hillside
-home-glow,Home Glow,Simple decor and lighting picks for dorms apartments and homes,Home,https://picsum.photos/seed/home-glow/800/600,Lakeside
+id,name,description,category,image_url,location,title,issue_number,publisher,character,year
+solar-sentinel-001,Solar Sentinel #1,A rookie hero discovers a suit powered by sunlight,Northstar Comics,,Unassigned,Solar Sentinel,1,Northstar Comics,Solar Sentinel,2024
+solar-sentinel-002,Solar Sentinel #2,The city loses power during the hero's first nighttime patrol,Northstar Comics,,Unassigned,Solar Sentinel,2,Northstar Comics,Solar Sentinel,2024
+solar-sentinel-003,Solar Sentinel #3,A stolen solar battery leads the hero to an abandoned observatory,Northstar Comics,,Unassigned,Solar Sentinel,3,Northstar Comics,Solar Sentinel,2025
+moonlight-detective-001,Moonlight Detective #1,A detective follows a trail of glowing footprints across the city,Lantern Press,,Unassigned,Moonlight Detective,1,Lantern Press,Moonlight Detective,2023
+moonlight-detective-002,Moonlight Detective #2,A missing clockmaker leaves clues hidden in the subway,Lantern Press,,Unassigned,Moonlight Detective,2,Lantern Press,Moonlight Detective,2024
+iron-orchid-001,Iron Orchid #1,A botanist builds mechanical armor to protect a community garden,Northstar Comics,,Unassigned,Iron Orchid,1,Northstar Comics,Iron Orchid,2025
+iron-orchid-002,Iron Orchid #2,An invasive mechanical vine threatens the city's green spaces,Northstar Comics,,Unassigned,Iron Orchid,2,Northstar Comics,Iron Orchid,2025
+star-courier-001,Star Courier #1,A courier accepts a mysterious delivery to a distant space station,Orbit House,,Unassigned,Star Courier,1,Orbit House,Star Courier,2023
+star-courier-002,Star Courier #2,A damaged navigation beacon strands the courier near an icy moon,Orbit House,,Unassigned,Star Courier,2,Orbit House,Star Courier,2024
+star-courier-003,Star Courier #3,The courier discovers why rival crews are searching for the package,Orbit House,,Unassigned,Star Courier,3,Orbit House,Star Courier,2025
