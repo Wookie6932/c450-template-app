@@ -21,7 +21,9 @@ No JavaScript page errors occurred during these checks. An unknown comic ID show
 
 ## Review
 
-William's review is pending. After upload, repeat the main flow on GitHub Pages and check keyboard navigation. Mark tasks Done only after review.
+William reviewed the deployed GitHub Pages application. The collection loaded all 10 records, search returned the correct Solar Sentinel #2 record, comic details displayed correctly, combined publisher and year filters returned the expected Star Courier #2 record, the no-results state and clear controls worked correctly, navigation between Home, Collection, and About worked, and keyboard navigation was verified.
+
+T1–T14 are complete.
 
 ## Data
 
