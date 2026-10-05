@@ -3,7 +3,9 @@ export default {
   template: /* html */ `
     <section class="container py-4">
       <h1>About</h1>
-      <p>This page is about the designer and builder of this app, including their background, portfolio of other work, and future career intentions.</p>
+      <p>Comic Collection Manager is William Byers's C450 project for browsing and searching a comic collection.</p>
+      <p>Select a comic to see its publisher, character, issue number, year, and description.</p>
+      <p>This prototype contains fictional sample comics for testing. Cover images can be added when available.</p>
     </section>
   `,
 };
