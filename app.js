@@ -47,32 +47,29 @@ const app = Vue.createApp({
         Papa.parse(csvText, {
           header: true,
           skipEmptyLines: true,
-          complete: ({ data, errors }) => {
-            if (errors.length > 0) {
-              itemsStore.error = 'There was a problem reading the CSV data.';
-              itemsStore.items = [];
-            } else {
-              itemsStore.items = data.map((row) => ({
-                id: String(row.id || '').trim(),
-                name: String(row.name || '').trim(),
-                description: String(row.description || '').trim(),
-                category: String(row.category || '').trim(),
-                imageUrl: String(row.image_url || '').trim(),
-                location: String(row.location || '').trim(),
-              }));
-              itemsStore.error = '';
-            }
+          complete: ({ data, errors, meta }) => {
+            const fields = ['id', 'title', 'issue_number', 'publisher', 'character', 'year', 'description', 'image_url'];
+            const comics = data.map((row) => Object.fromEntries(
+              fields.map((field) => [field, String(row[field] || '').trim()])
+            ));
+            const invalid = !fields.every((field) => meta.fields?.includes(field))
+              || new Set(comics.map((comic) => comic.id)).size !== comics.length
+              || comics.some((comic) => fields.some((field) => field !== 'image_url' && !comic[field])
+                || !/^\d+$/.test(comic.issue_number) || !/^\d{4}$/.test(comic.year));
+            itemsStore.error = errors.length || invalid
+              ? 'The comic collection could not be read. Check the collection data and try again.' : '';
+            itemsStore.items = itemsStore.error ? [] : comics;
             itemsStore.isLoading = false;
           },
           error: () => {
-            itemsStore.error = 'There was a problem parsing CSV data.';
+            itemsStore.error = 'The comic collection could not be read. Please refresh and try again.';
             itemsStore.items = [];
             itemsStore.isLoading = false;
           },
         });
       })
       .catch(() => {
-        itemsStore.error = 'There was a problem loading data.';
+        itemsStore.error = 'The comic collection could not be loaded. Please refresh and try again.';
         itemsStore.items = [];
         itemsStore.isLoading = false;
       });
