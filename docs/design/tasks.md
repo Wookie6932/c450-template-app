@@ -6,20 +6,20 @@
 
 | ID | Task | Traces to (R# / ADR#) | Depends on | Status |
 |----|------|--------------------------|------------|--------|
-| T1 | Prepare and validate the comic collection data source | R7, ADR-01 | — | In progress |
-| T2 | Verify navigation between Home, Collection, and About pages | R1, ADR-00 | — | In progress |
-| T3 | Build the collection view to load and display comic records | R2, R7, ADR-00, ADR-01 | T1 | In progress |
-| T4 | Build comic cards showing title, issue number, publisher, and cover image | R3, ADR-03 | T3 | In progress |
-| T5 | Build the individual comic detail view | R4, ADR-03 | T3 | In progress |
-| T6 | Add client-side search functionality | R5, ADR-02 | T3 | In progress |
-| T7 | Test search using known comic records | R5, ADR-02 | T6 | In progress |
-| T8 | Add collection filtering controls | R6, ADR-02 | T3 | In progress |
-| T9 | Test filtering by the supported comic fields | R6, ADR-02 | T8 | In progress |
-| T10 | Add an error message for collection data loading failures | R8, ADR-04 | T3 | In progress |
-| T11 | Add placeholder handling for unavailable comic cover images | R3 | T4 | In progress |
-| T12 | Test navigation from collection cards to comic detail views | R2, R3, R4 | T4, T5 | In progress |
-| T13 | Test the application at multiple screen sizes | R1, R2, R3, ADR-00 | T2, T4, T5 | In progress |
-| T14 | Test the complete user flow against the specification requirements | R1-R8 | T7, T9, T10, T11, T12, T13 | In progress |
+| T1 | Prepare and validate the comic collection data source | R7, ADR-01 | — | Done |
+| T2 | Verify navigation between Home, Collection, and About pages | R1, ADR-00 | — | Done |
+| T3 | Build the collection view to load and display comic records | R2, R7, ADR-00, ADR-01 | T1 | Done |
+| T4 | Build comic cards showing title, issue number, publisher, and cover image | R3, ADR-03 | T3 | Done |
+| T5 | Build the individual comic detail view | R4, ADR-03 | T3 | Done |
+| T6 | Add client-side search functionality | R5, ADR-02 | T3 | Done |
+| T7 | Test search using known comic records | R5, ADR-02 | T6 | Done |
+| T8 | Add collection filtering controls | R6, ADR-02 | T3 | Done |
+| T9 | Test filtering by the supported comic fields | R6, ADR-02 | T8 | Done |
+| T10 | Add an error message for collection data loading failures | R8, ADR-04 | T3 | Done |
+| T11 | Add placeholder handling for unavailable comic cover images | R3 | T4 | Done |
+| T12 | Test navigation from collection cards to comic detail views | R2, R3, R4 | T4, T5 | Done |
+| T13 | Test the application at multiple screen sizes | R1, R2, R3, ADR-00 | T2, T4, T5 | Done |
+| T14 | Test the complete user flow against the specification requirements | R1-R8 | T7, T9, T10, T11, T12, T13 | Done |
 
 **Status values:** Not started · In progress · Done · Blocked
 
@@ -37,4 +37,4 @@
 
 ## Implementation and testing
 
-T1–T14 are implemented and the browser checks passed. Status remains In progress until William reviews the app. See [test-results.md](test-results.md).
+T1–T14 are implemented, tested, and reviewed on the deployed GitHub Pages site. All tasks are complete. See [test-results.md](test-results.md).
